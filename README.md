@@ -52,12 +52,12 @@
 
 +--------+----------+----------+------+-----------------------------------------------+------------+
 
-| | POST | / | | App\Http\Controllers\HomeController@back | web |
-| | GET|HEAD | / | | App\Http\Controllers\HomeController@index | web |
-| | GET|HEAD | api/user | | Closure | api |
-| | | | | | auth:api |
-| | POST | comfirm | | App\Http\Controllers\ComfirmController@index | web |
-| | POST | register | | App\Http\Controllers\RegisterController@index | web |
+| | POST | / | | App\Http\Controllers\HomeController@back | web |<br>
+| | GET|HEAD | / | | App\Http\Controllers\HomeController@index | web |<br>
+| | GET|HEAD | api/user | | Closure | api |<br>
+| | | | | | auth:api |<br>
+| | POST | comfirm | | App\Http\Controllers\ComfirmController@index | web |<br>
+| | POST | register | | App\Http\Controllers\RegisterController@index | web |<br>
 
 +--------+----------+----------+------+-----------------------------------------------+------------+
 
