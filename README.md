@@ -3,8 +3,8 @@
 ## 開発環境
 
 -   macOS 10.13.6(ホスト OS)
--   VirtualBox 6.1.18
--   CentOS 7.9.2009(ゲスト OS)
+-   ~~VirtualBox 6.1.18~~
+-   ~~CentOS 7.9.2009(ゲスト OS)~~
 -   Apache 2.4.6
 -   MySQL 8.0.23
 -   PHP 7.4.15
@@ -30,7 +30,7 @@
 
 -   メール送信には Mailable クラスを使用し、本文は view のテンプレートに値を当てはめて送信できるよう実装した。
 -   データベース登録には、Eloquent モデルを利用して行った。
--   バリデーションは、FormRequest クラスを継承した ContactForm クラスで行い、メールアドレスと電話番号については、独自のバリデーションを実装してバリデーションを行った。
+-   バリデーションは、FormRequest クラスを継承した ContactForm クラスで行い、メールアドレスと電話番号については、独自のバリデーションを実装し行った。
 
 ## 改善点
 
@@ -42,6 +42,7 @@
 -   ソースコードをルート直下に配置する。
 -   .env.sample のファイル名を .env に変更。
 -   データベースとメールの情報を、.env に正しく入力する。
+-   composer のインストール
 -   テーブルは、マイグレーションを実行して作成する。
 -   Google の SMTP 経由でメールを送信し、メールが正しく送信されている。
 -   送信完了後、入力値がデータベースに登録されている。
@@ -50,12 +51,14 @@
 ### route:list
 
 +--------+----------+----------+------+-----------------------------------------------+------------+
+
 | | POST | / | | App\Http\Controllers\HomeController@back | web |
 | | GET|HEAD | / | | App\Http\Controllers\HomeController@index | web |
 | | GET|HEAD | api/user | | Closure | api |
 | | | | | | auth:api |
 | | POST | comfirm | | App\Http\Controllers\ComfirmController@index | web |
 | | POST | register | | App\Http\Controllers\RegisterController@index | web |
+
 +--------+----------+----------+------+-----------------------------------------------+------------+
 
 ### 検証ブラウザ
