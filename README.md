@@ -124,6 +124,6 @@
 
 ## 参考資料
 
--   (Laravel 7.x TOC)[https://readouble.com/laravel/7.x/ja/]
--   (Laravel メール送信機能の実装で mailtrap や Gmail の SMTP サーバーを使ってみる)[https://qiita.com/KZ-taran/items/ffa60ac6353bc4dcc759]
--   (laravel5.6, 5.7 独自のバリデーションルールを追加しよう！)[https://tac-blog.tech/index.php/2018/09/08/add-validation-rule/]
+-   [Laravel 7.x TOC](https://readouble.com/laravel/7.x/ja/)
+-   [Laravel メール送信機能の実装で mailtrap や Gmail の SMTP サーバーを使ってみる](https://qiita.com/KZ-taran/items/ffa60ac6353bc4dcc759)
+-   [aravel5.6, 5.7 独自のバリデーションルールを追加しよう！](https://tac-blog.tech/index.php/2018/09/08/add-validation-rule/)
